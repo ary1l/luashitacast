@@ -623,7 +623,7 @@ local sets = {
     Movement = {
         Ammo = 'Staunch Tathlum',
         Head = 'chev. armet +3',
-        Neck = 'coatl gorget +1',
+        Neck = 'unmoving collar +1',
         Ear1 = 'hearty earring',
         Ear2 = 'spellbr. earring',
         Body = 'sakpata\'s plate',
@@ -825,4 +825,5 @@ profile.HandleWeaponskill = function()
 end
 
 return profile;
+
 
