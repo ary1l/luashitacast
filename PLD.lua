@@ -191,7 +191,7 @@ local sets = {
         Feet = 'chev. sabatons +3',--15
     },
 
-    Cure = {  --maybe need to fix for Aminon, 95% SIR(overcapped w merits) 39/50 CurePot, 25/30CurePot2 w Majesty
+    Cure = {  --maybe need to fix for Aminon, 95% SIR 39%/50% CurePot, 25%/30%CurePot2 w Majesty
         Ammo = 'Staunch Tathlum', --10SIR
         Head = 'Souv. Schaller +1', --15rec/20SIR
         Neck = 'moonlight necklace',--15SIR
