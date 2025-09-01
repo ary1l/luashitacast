@@ -199,7 +199,7 @@ local sets = {
         Ear2 = 'chev. earring +1', --11
         Body = 'chev. cuirass +3',--20SIR
         Hands = 'Macabre Gaunt. +1', --11
-        Ring1 = 'eihwaz ring',
+        Ring1 = 'defending ring',
         Ring2 = 'gelatinous ring +1',
 		--Ring2 = 'Moonlight Ring',
         Back = { Name = 'Rudianos\'s Mantle', Augment = { [1] = 'Phys. dmg. taken -10%', [2] = 'Evasion+20', [3] = 'HP+60', [4] = 'Mag. Evasion+30', [5] = 'Enmity+10' } },
@@ -216,7 +216,7 @@ local sets = {
         Ear2 = 'tuisto Earring',
         Body = 'valorous mail',--4
         Hands = 'souv. handsch. +1', --5
-        Ring1 = 'eihwaz ring',
+        Ring1 = 'defending ring',
         Ring2 = 'gelatinous ring +1',
 		--Ring2 = 'Moonlight Ring',
         Back = { Name = 'Rudianos\'s Mantle', Augment = { [1] = 'Phys. dmg. taken -10%', [2] = 'Mag. Eva.+20', [3] = 'Eva.+20', [4] = 'HP+60', [5] = 'Enmity+10' } },
@@ -233,7 +233,7 @@ local sets = {
         Ear2 = 'earthcry earring',
         Body = 'rev. surcoat +4',
         Hands = 'stone mufflers',
-		Ring1 = 'eihwaz ring',
+		Ring1 = 'defending ring',
         Ring2 = 'gelatinous ring +1',
 		--Ring2 = 'Moonlight Ring',
         Back = 'moonbeam cape',
@@ -825,3 +825,4 @@ profile.HandleWeaponskill = function()
 end
 
 return profile;
+
