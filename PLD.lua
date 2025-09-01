@@ -192,21 +192,21 @@ local sets = {
         Feet = 'chev. sabatons +3',--15
     },
 
-    Cure = {
-        Ammo = 'Staunch Tathlum',
-        Head = 'Souv. Schaller +1', --15rec
-        Neck = 'moonlight necklace',
+    Cure = {  --maybe need to fix for Aminon, 95% SIR(overcapped w merits) 39/50 CurePot, 25/30CurePot2 w Majesty
+        Ammo = 'Staunch Tathlum', --10SIR
+        Head = 'Souv. Schaller +1', --15rec/20SIR
+        Neck = 'moonlight necklace',--15SIR
         Ear1 = 'mendi. earring', --5
         Ear2 = 'chev. earring +1', --11
-        Body = 'Sakpata\'s plate', --10rec
+        Body = 'chev. cuirass +3',--20SIR
         Hands = 'Macabre Gaunt. +1', --11
         Ring1 = 'eihwaz ring',
         Ring2 = 'gelatinous ring +1',
 		--Ring2 = 'Moonlight Ring',
         Back = { Name = 'Rudianos\'s Mantle', Augment = { [1] = 'Phys. dmg. taken -10%', [2] = 'Evasion+20', [3] = 'HP+60', [4] = 'Mag. Evasion+30', [5] = 'Enmity+10' } },
         Waist = 'plat. mog. belt',
-        Legs = 'cab. breeches +4',
-        Feet = 'odyssean greaves',--12
+        Legs = 'cab. breeches +4',--10SIR
+        Feet = 'odyssean greaves',--12/20SIR
     },
 	
     Phalanx = {
@@ -826,3 +826,4 @@ profile.HandleWeaponskill = function()
 end
 
 return profile;
+
