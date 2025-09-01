@@ -209,7 +209,7 @@ local sets = {
     },
 	
     Phalanx = { -- +25phalanx received
-		ammo = 'sapience orb',
+		ammo = 'staunch tathlum',
         Head = 'valorous mask',--4
         Neck = 'moonlight necklace',
         Ear1 = 'odnowa earring +1',
@@ -825,3 +825,4 @@ profile.HandleWeaponskill = function()
 end
 
 return profile;
+
