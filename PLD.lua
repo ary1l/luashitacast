@@ -4,7 +4,6 @@ gcinclude = gFunc.LoadFile('common\\gcinclude.lua');
 
 local sets = {
     Idle = {
-		sub = 'aegis',
         Ammo = 'Staunch Tathlum',
         Head = 'chev. armet +3',
         Neck = 'moonlight necklace',
@@ -826,3 +825,4 @@ profile.HandleWeaponskill = function()
 end
 
 return profile;
+
