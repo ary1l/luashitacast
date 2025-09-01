@@ -16,7 +16,7 @@ local sets = {
         Back = { Name = 'Rudianos\'s Mantle', Augment = { [1] = 'Phys. dmg. taken -10%', [2] = 'Evasion+20', [3] = 'HP+60', [4] = 'Mag. Evasion+30', [5] = 'Enmity+10' } },
         Waist = 'carrier\'s sash',
         Legs = 'chev. cuisses +3',
-        Feet = 'nyame sollerets',
+        Feet = 'rev. leggings +4',
     },
     Resting = {},
     Idle_Regen = {
