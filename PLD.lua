@@ -517,8 +517,8 @@ local sets = {
         Legs = 'Cab. Breeches +4',
         Feet = 'chev. sabatons +3',--15
 		},
+		
     Cover = {
-		sub = 'diamond aspis',
         --Head = 'Rev. Coronet +1',
 		Ammo = 'Sapience Orb',--2
         Head = 'loess barbuta +1',--19
@@ -825,4 +825,3 @@ profile.HandleWeaponskill = function()
 end
 
 return profile;
-
