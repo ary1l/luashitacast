@@ -208,7 +208,7 @@ local sets = {
         Feet = 'odyssean greaves',--12/20SIR
     },
 	
-    Phalanx = { -- +25phalanx received
+    Phalanx = { -- +27phalanx received
 		ammo = 'staunch tathlum',
         Head = 'valorous mask',--4
         Neck = 'moonlight necklace',
@@ -219,7 +219,7 @@ local sets = {
         Ring1 = 'defending ring',
         Ring2 = 'gelatinous ring +1',
 		--Ring2 = 'Moonlight Ring',
-        Back = 'weard mantle', --2
+        Back = 'weard mantle', --4
         Waist = 'audumbla sash',
         Legs = 'sakpata\'s cuisses', --5
         Feet = 'souveran schuhs +1', --5
@@ -825,3 +825,4 @@ profile.HandleWeaponskill = function()
 end
 
 return profile;
+
