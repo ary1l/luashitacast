@@ -135,12 +135,12 @@ local sets = {
         Feet = 'nyame sollerets',
     },
 
-    Precast = {
+    Precast = { --47FC
         Ammo = 'Sapience Orb',--2
         Head = 'chev. armet +3',--9
         Neck = 'voltsurge torque',--4
-        Ear1 = 'Odnowa earring +1',
-        Ear2 = 'tuisto Earring',
+        Ear1 = 'loquac. earring', --2
+        Ear2 = 'Etiolation Earring',--1
         Body = 'Rev. Surcoat +4',--10
         Hands = 'Leyline Gloves',--6
 		Ring1 = 'defending ring',
@@ -152,8 +152,8 @@ local sets = {
         Feet = 'chev. sabatons +3',--7
     },
     Cure_Precast = {
+	    --Ear1 = 'Nourish. Earring +1',
         Ear2 = 'Mendi. Earring',
-        --Ear2 = 'Nourish. Earring +1',
     },
     Enhancing_Precast = {
 		body = 'shab. cuirass +1',
@@ -192,7 +192,7 @@ local sets = {
         Feet = 'chev. sabatons +3',--15
     },
 
-    Cure = {  --maybe need to fix for Aminon, 95% SIR, 39%/50% CurePot, 25%/30%CurePot2 w Majesty
+    Cure = {  --maybe need to fix for Aminon, 95% SIR(overcapped w merits) 39/50 CurePot, 25/30CurePot2 w Majesty
         Ammo = 'Staunch Tathlum', --10SIR
         Head = 'Souv. Schaller +1', --15rec/20SIR
         Neck = 'moonlight necklace',--15SIR
@@ -209,21 +209,21 @@ local sets = {
         Feet = 'odyssean greaves',--12/20SIR
     },
 	
-    Phalanx = {
+    Phalanx = { -- +23phalanx received
 		ammo = 'sapience orb',
-        Head = 'valorous mask',
+        Head = 'valorous mask',--4
         Neck = 'moonlight necklace',
         Ear1 = 'odnowa earring +1',
         Ear2 = 'tuisto Earring',
-        Body = 'valorous mail',
+        Body = 'valorous mail',--4
         Hands = 'souv. handsch. +1', --5
         Ring1 = 'eihwaz ring',
         Ring2 = 'gelatinous ring +1',
 		--Ring2 = 'Moonlight Ring',
         Back = { Name = 'Rudianos\'s Mantle', Augment = { [1] = 'Phys. dmg. taken -10%', [2] = 'Mag. Eva.+20', [3] = 'Eva.+20', [4] = 'HP+60', [5] = 'Enmity+10' } },
         Waist = 'audumbla sash',
-        Legs = 'sakpata\'s cuisses', -- 5
-        Feet = 'souveran schuhs +1',
+        Legs = 'sakpata\'s cuisses', --5
+        Feet = 'souveran schuhs +1', --5
 	},
 		
 	Stoneskin = {
@@ -233,31 +233,31 @@ local sets = {
         Ear1 = 'odnowa earring +1',
         Ear2 = 'earthcry earring',
         Body = 'rev. surcoat +4',
-        Hands = 'stone mufflers', --5
+        Hands = 'stone mufflers',
 		Ring1 = 'eihwaz ring',
         Ring2 = 'gelatinous ring +1',
 		--Ring2 = 'Moonlight Ring',
         Back = 'moonbeam cape',
         Waist = 'siegel sash',
-        Legs = 'haven hose', -- 5
+        Legs = 'haven hose',
         Feet = 'sakpata\'s leggings',
     },
 	
-    Reprisal = {
-        Ammo = 'Sapience Orb',
-        Head = 'chev. armet +3',
-        Neck = 'unmoving collar +1', 
+    Reprisal = { --105 SIR
+        Ammo = 'staunch tathlum',--10
+        Head = 'souv. schaller +1',--20
+        Neck = 'moonlight necklace', --15
         Ear1 = 'odnowa earring +1',
         Ear2 = 'Tuisto Earring',
         Body = 'Shab. Cuirass +1',
-		Hands = 'regal gauntlets',
+		Hands = 'regal gauntlets',--20
 		Ring1 = 'eihwaz ring',
         Ring2 = 'gelatinous ring +1',
 		--Ring2 = 'Moonlight Ring',
         Back = { Name = 'Rudianos\'s Mantle', Augment = { [1] = 'Phys. dmg. taken -10%', [2] = 'Evasion+20', [3] = 'HP+60', [4] = 'Mag. Evasion+30', [5] = 'Enmity+10' } },
-        Waist = 'audumbla sash',
-        Legs = 'cab. breeches +4',
-        Feet = 'chev. sabatons +3',
+        Waist = 'audumbla sash',--10
+        Legs = 'cab. breeches +4',--10
+        Feet = 'odyssean greaves',--20
     },
 	
     Flash = {
@@ -758,10 +758,10 @@ profile.HandleMidcast = function()
         gFunc.EquipSet(sets.Phalanx);
     elseif string.match(spell.Name, 'Reprisal') then
         gFunc.EquipSet(sets.Reprisal);
-        --return;--if we dont want to override this with SIR even with SIR toggle
+        -- return; --if we dont want to override this with SIR even with SIR toggle
 	elseif string.match(spell.Name, 'Stoneskin') then
         gFunc.EquipSet(sets.Stoneskin);
-        --return;--if we dont want to override this with SIR even with SIR toggle
+        --return; --if we dont want to override this with SIR even with SIR toggle
     elseif string.match(spell.Name, 'Flash') then
         gFunc.EquipSet(sets.Flash);
     else
@@ -826,6 +826,3 @@ profile.HandleWeaponskill = function()
 end
 
 return profile;
-
-
-
