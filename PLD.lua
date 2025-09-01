@@ -624,8 +624,8 @@ local sets = {
         Ammo = 'Staunch Tathlum',
         Head = 'chev. armet +3',
         Neck = 'unmoving collar +1',
-        Ear1 = 'hearty earring',
-        Ear2 = 'spellbr. earring',
+        Ear1 = 'odnowa earring +1',
+        Ear2 = 'hearty earring',
         Body = 'sakpata\'s plate',
         Hands = 'regal gauntlets',
         Ring1 = 'shneddick ring',
@@ -643,8 +643,8 @@ local sets = {
         Ammo = 'Staunch Tathlum',
         Head = 'chev. armet +3',
         Neck = 'unmoving collar +1',
-        Ear1 = 'hearty earring',
-        Ear2 = 'spellbr. earring',
+        Ear1 = 'odnowa earring +1',
+        Ear2 = 'hearty earring',
         Body = 'sakpata\'s plate',
         Hands = 'nyame gauntlets',
         Ring1 = 'shneddick ring',
@@ -825,5 +825,3 @@ profile.HandleWeaponskill = function()
 end
 
 return profile;
-
-
