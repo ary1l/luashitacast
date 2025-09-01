@@ -6,10 +6,10 @@ local sets = {
     Idle = {
         Ammo = 'Staunch Tathlum',
         Head = 'chev. armet +3',
-        Neck = 'moonlight necklace',
+        Neck = 'unmoving collar +1',
         Ear1 = 'Odnowa Earring +1',
         Ear2 = 'tuisto earring',
-        Body = 'rev. surcoat +4',
+        Body = 'sakpata\'s plate',
         Hands = 'chev. gauntlets +3',
         Ring1 = 'warden\'s ring',
         Ring2 = 'vexer ring +1',
@@ -208,7 +208,7 @@ local sets = {
         Feet = 'odyssean greaves',--12/20SIR
     },
 	
-    Phalanx = { -- +23phalanx received
+    Phalanx = { -- +25phalanx received
 		ammo = 'sapience orb',
         Head = 'valorous mask',--4
         Neck = 'moonlight necklace',
@@ -219,7 +219,7 @@ local sets = {
         Ring1 = 'defending ring',
         Ring2 = 'gelatinous ring +1',
 		--Ring2 = 'Moonlight Ring',
-        Back = { Name = 'Rudianos\'s Mantle', Augment = { [1] = 'Phys. dmg. taken -10%', [2] = 'Mag. Eva.+20', [3] = 'Eva.+20', [4] = 'HP+60', [5] = 'Enmity+10' } },
+        Back = 'weard mantle', --2
         Waist = 'audumbla sash',
         Legs = 'sakpata\'s cuisses', --5
         Feet = 'souveran schuhs +1', --5
@@ -626,13 +626,13 @@ local sets = {
         Neck = 'coatl gorget +1',
         Ear1 = 'hearty earring',
         Ear2 = 'spellbr. earring',
-        Body = 'rev. surcoat +4',
+        Body = 'sakpata\'s plate',
         Hands = 'regal gauntlets',
         Ring1 = 'shneddick ring',
         --ring2 = 'moonlight ring',
 		Ring2 = 'vexer ring +1',
         Back = { Name = 'Rudianos\'s Mantle', Augment = { [1] = 'Phys. dmg. taken -10%', [2] = 'Evasion+20', [3] = 'HP+60', [4] = 'Mag. Evasion+30', [5] = 'Enmity+10' } }, --10
-        Waist = 'plat. mog. belt',
+        Waist = 'carrier\'s sash',
         Legs = 'chev. cuisses +3',
         Feet = 'nyame sollerets',
 	},	
@@ -642,15 +642,15 @@ local sets = {
 		sub = 'aegis',
         Ammo = 'Staunch Tathlum',
         Head = 'chev. armet +3',
-        Neck = 'Warder\'s charm +1',
+        Neck = 'unmoving collar +1',
         Ear1 = 'hearty earring',
         Ear2 = 'spellbr. earring',
-        Body = 'rev. surcoat +4',
+        Body = 'sakpata\'s plate',
         Hands = 'nyame gauntlets',
         Ring1 = 'shneddick ring',
         Ring2 = 'vexer ring +1',
         Back = { Name = 'Rudianos\'s Mantle', Augment = { [1] = 'Phys. dmg. taken -10%', [2] = 'Evasion+20', [3] = 'HP+60', [4] = 'Mag. Evasion+30', [5] = 'Enmity+10' } }, --10
-        Waist = 'plat. mog. belt',
+        Waist = 'carrier\'s sash',
         Legs = 'chev. cuisses +3',
         Feet = 'nyame sollerets',
 	},
@@ -825,4 +825,3 @@ profile.HandleWeaponskill = function()
 end
 
 return profile;
-
