@@ -3,6 +3,8 @@ gcinclude = gFunc.LoadFile('common\\gcinclude.lua');
 
 local sets = {
     Idle = {
+		main = 'excalibur',
+		sub = 'diamond aspis',
 		ammo = 'staunch tathlum',
         Head = 'leth. chappel +3',
         Neck = 'Warder\'s Charm +1',
@@ -89,9 +91,9 @@ local sets = {
     },
 
 
-    Precast = {--30 from traits, 67 from gear
+    Precast = {--30 from traits, 80 from gear
 		main = 'Sakpata\'s sword',--10
-        Head = 'Atro. Chapeau +2',--12
+        Head = 'Atro. Chapeau +2',--14
         Neck = 'voltsurge torque',--4
         Ear1 = 'malignance Earring',--4
         Ear2 = 'leth. earring +1',--8
@@ -142,16 +144,16 @@ local sets = {
         Main = 'daybreak',--I 30
         Sub = 'Ammurapi Shield',
         Ammo = 'Pemphredo Tathlum',
-        --Neck = 'Nodens Gorget',--I 5
+        Neck = 'loricate torque +1',
         Ear1 = 'Mendi. Earring',--I 5
-        ear2 = 'regal earring',
+        ear2 = 'gwati earring',
 		body = 'Bunzi\'s robe', --I 15
         Ring1 = 'Stikini Ring +1',
-        Ring2 = 'naji\'s loop',
-        Back = 'Solemnity Cape',--I 7
+        Ring2 = 'defending ring',
+        Back = { Name = 'Sucellos\'s Cape', Augment = { [1] = 'Phys. dmg. taken -10%', [2] = 'Mag. Acc.+30', [3] = 'Magic Damage+20', [4] = 'MND+20', [5] = 'Haste+10' } },
         Waist = 'Rumination Sash',
         Legs = 'Atrophy Tights +2',--I 10 and skill
-		feet = 'vanya clogs',
+		feet = 'leth. houseaux +3',
     },
     Self_Cure = {--cap 30
         Waist = 'Gishdubar Sash',
@@ -160,6 +162,7 @@ local sets = {
         Main = 'Bolelabunga',
         Sub = 'Ammurapi Shield',
         Body = 'Viti. Tabard +3',
+		Back = 'ghostfyre cape',
     },
     Cursna = {
         --Ring1 = 'Purity Ring',
@@ -178,7 +181,7 @@ local sets = {
         Hands = 'Atrophy Gloves +2',
         Ring1 = 'Stikini Ring +1',
         Ring2 = 'Metamor. Ring +1',
-        Back = { Name = 'Sucellos\'s Cape', Augment = { [1] = 'Phys. dmg. taken -10%', [2] = 'Mag. Acc.+30', [3] = 'Magic Damage+20', [4] = 'MND+20', [5] = 'Haste+10' } },
+        Back = 'ghostfyre cape',
         Waist = 'Embla Sash',
         Legs = 'Telchine Braconi',
         Feet = 'Leth. Houseaux +3',
@@ -194,7 +197,7 @@ local sets = {
     Phalanx = {},
     Refresh = {
         Body = 'Atrophy Tabard +2',
-		Back = { Name = 'Sucellos\'s Cape', Augment = { [1] = 'Phys. dmg. taken -10%', [2] = 'Mag. Acc.+30', [3] = 'Magic Damage+20', [4] = 'MND+20', [5] = 'Haste+10' } },
+		Back = 'ghostfyre cape',
 		Waist = 'Gishdubar Sash',
 		legs = 'leth. fuseau +3',
 		Feet = 'Leth. Houseaux +3',
@@ -212,7 +215,7 @@ local sets = {
         Hands = 'Viti. Gloves +2',
         Ring1 = 'Stikini Ring +1',
         Ring2 = 'Metamor. Ring +1',
-        Back = { Name = 'Sucellos\'s Cape', Augment = { [1] = 'Phys. dmg. taken -10%', [2] = 'Mag. Acc.+30', [3] = 'Magic Damage+20', [4] = 'MND+20', [5] = 'Haste+10' } },
+        Back = 'ghostfyre cape',
         Waist = 'Embla Sash',
         Legs = 'Telchine Braconi',
         Feet = 'Leth. Houseaux +3',
