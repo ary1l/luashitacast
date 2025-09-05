@@ -4,12 +4,15 @@ gcinclude = gFunc.LoadFile('common\\gcinclude.lua');
 
 local sets = {
     Idle = {
+		main = 'burtgang',
+		sub = 'aegis',
+		range = empty,
         Ammo = 'Staunch Tathlum',
         Head = 'chev. armet +3',
         Neck = 'unmoving collar +1',
         Ear1 = 'Odnowa Earring +1',
         Ear2 = 'tuisto earring',
-        Body = 'sakpata\'s plate',
+        Body = 'chev. cuirass +3',
         Hands = 'chev. gauntlets +3',
         Ring1 = 'warden\'s ring',
         Ring2 = 'vexer ring +1',
@@ -38,9 +41,11 @@ local sets = {
         Sub = 'duban',
 		range = 'ullr',
         Ammo = 'chapuli arrow',
+		Head = 'chev. armet +3',
 		neck = 'coatl gorget +1',
 		ear1 = 'hearty earring',
 		ear2 = 'chev. earring +1',
+		Body = 'Rev. Surcoat +4',
         Hands = 'regal gauntlets',
 		Ring1 = 'shneddick ring',
 		ring2 = 'stikini ring +1',
@@ -49,20 +54,41 @@ local sets = {
         Feet = 'Rev. Leggings +4',
     },
 
+    mdt = {
+		main = 'excalibur',
+		sub = 'aegis',
+		range = empty,
+		ammo = 'vanir battery',
+        Head = 'nyame helm',
+        Neck = 'coatl gorget +1',
+        Ear1 = 'odnowa Earring +1',
+        Ear2 = 'chev. earring +1',
+        Body = 'nyame mail',
+        Hands = 'nyame gauntlets',
+		Ring1 = 'vexer ring +1',
+        Ring2 = 'vexer ring +1',
+        Back = { Name = 'Rudianos\'s Mantle', Augment = { [1] = 'Phys. dmg. taken -10%', [2] = 'Evasion+20', [3] = 'HP+60', [4] = 'Mag. Evasion+30', [5] = 'Enmity+10' } },
+        Waist = 'carrier\'s sash',
+        Legs = 'nyame flanchard',
+        Feet = 'nyame sollerets',
+    },
+
     Dt = {
-        Ammo = 'Staunch Tathlum',
-        Head = 'Sakpata\'s helm',
-        Neck ='Loricate Torque +1',
-        Ear1 = 'Odnowa Earring +1',
-        Ear2 = 'Etiolation Earring',
-        Body = 'Sakpata\'s Plate',
-        Hands = 'Sakpata\'s Gauntlets',
+		main = 'burtgang',
+		sub = 'duban',
+		ammo = 'staunch tathlum',
+        Head = 'chev. armet +3',
+        Neck = 'unmoving collar +1',
+        Ear1 = 'odnowa Earring +1',
+        Ear2 = 'chev. earring +1',
+        Body = 'chev. cuirass +3',
+        Hands = 'chev. gauntlets +3',
 		Ring1 = 'warden\'s ring',
         Ring2 = 'gelatinous ring +1',
         Back = { Name = 'Rudianos\'s Mantle', Augment = { [1] = 'Phys. dmg. taken -10%', [2] = 'Evasion+20', [3] = 'HP+60', [4] = 'Mag. Evasion+30', [5] = 'Enmity+10' } },
-        Waist = 'asklepian belt',
-        Legs = 'nyame flanchard',
-        Feet = 'nyame sollerets',
+        Waist = 'carrier\'s sash',
+        Legs = 'chev. cuisses +3',
+        Feet = 'chev. sabatons +3',
     },
 
     Tp_Default = {
@@ -385,7 +411,7 @@ local sets = {
     Aedge_Hybrid = {},
     Aedge_Acc = {},
 
-    sanguine_default = {
+    sanguine_Default = {
         Ammo = 'Pemphredo tathlum',
         Head = 'pixie hairpin +1',
         Neck = 'sibyl scarf',
@@ -693,6 +719,7 @@ profile.HandleDefault = function()
 	end
 	
     gcinclude.CheckDefault ();
+	if (gcdisplay.GetToggle('MDTset') == true) then gFunc.EquipSet(sets.mdt) end;
     if (gcdisplay.GetToggle('DTset') == true) then gFunc.EquipSet(sets.Dt) end;
     if (gcdisplay.GetToggle('Kite') == true) then gFunc.EquipSet(sets.kite) end;
 end
@@ -823,6 +850,4 @@ profile.HandleWeaponskill = function()
         end
     end
 end
-
 return profile;
-
