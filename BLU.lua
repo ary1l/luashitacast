@@ -41,7 +41,7 @@ local sets = {
         Ear1 = 'Eabani Earring',
         Ear2 = 'Etiolation Earring',
         Body = 'Assim. Jubbah +4',
-        Hands = 'Assim. Bazu. +3',
+        Hands = 'Assim. Bazu. +4',
         Ring1 = 'Stikini Ring +1',
         Ring2 = 'shneddick ring',
         Back = 'null shawl',
@@ -83,21 +83,26 @@ local sets = {
 	
 	Tp_Default = {
         Ammo = 'coiste bodhar',
-        Head = 'Malignance Chapeau',
+        Head = 'adhemar bonnet +1',
         Neck = 'Mirage Stole +2',
         Ear1 = 'Suppanomimi',
         Ear2 = 'hashi. earring +1',
         Body = 'Adhemar jacket +1',
-        Hands = 'Malignance Gloves',
+        Hands = 'adhemar wrist. +1',
         Ring1 = 'Epona\'s ring',
-        Ring2 = 'Chirich Ring +1',
+        Ring2 = 'petrov Ring',
         Back = 'null shawl',
         Waist = 'kentarch belt +1',
-        Legs = 'malignance tights',
-		Feet = 'malignance boots',
+        Legs = 'samnuha tights',
+		Feet = 'herculean boots',
     },
 	Tp_Hybrid = {
+		Head = 'Malignance Chapeau',
 		Body = 'Malignance Tabard',
+		Hands = 'Malignance Gloves',
+		Ring2 = 'Chirich Ring +1',
+		Legs = 'malignance tights',
+		Feet = 'malignance boots',
         },
 	Tp_Acc = {
         },
@@ -280,8 +285,12 @@ local sets = {
     },
 
     Preshot = {
+		range = 'aliyat chakram',
+		ammo = empty,
     },
     Midshot = {
+		range = 'aliyat chakram',
+		ammo = empty,
         Ear1 = 'Telos Earring',
         --Ear2 = 'Crep. Earring',
     },
