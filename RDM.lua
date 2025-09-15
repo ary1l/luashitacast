@@ -5,11 +5,12 @@ local sets = {
     Idle = {
 		main = 'excalibur',
 		sub = 'diamond aspis',
+		range = empty,
 		ammo = 'staunch tathlum',
         Head = 'leth. chappel +3',
         Neck = 'Warder\'s Charm +1',
         Ear1 = 'eabani earring',
-        Ear2 = 'Etiolation Earring',
+        Ear2 = 'alabaster Earring',
 		Body = 'lethargy Sayon +3',
         Hands = 'leth. ganth. +3',
         Ring1 = 'Stikini Ring +1',
@@ -27,7 +28,9 @@ local sets = {
     },
     Idle_Refresh = {
         Head = 'Viti. Chapeau +4',
+		hands = 'merlinic dastanas',
 		body = 'lethargy sayon +3',
+		feet = 'merlinic crackows',
     },
 	
     Town = {
@@ -38,15 +41,15 @@ local sets = {
         Head = 'Viti. Chapeau +4',
         Neck = 'warder\'s charm +1',
         Ear1 = 'etiolation earring',
-        Ear2 = 'leth. earring +1',
-        Body = 'lethargy Sayon +3',
+        Ear2 = 'alabaster earring',
+        Body = 'Viti. Tabard +4',
         Hands = 'leth. ganth. +3',
         Ring1 = 'stikini ring +1',
         Ring2 = 'shneddick ring',
-        Back = 'null shawl',
+        Back = 'ghostfyre cape',
         Waist = 'null belt',
         Legs = 'nyame flanchard',
-        Feet = 'nyame sollerets',
+        feet= 'Viti. Boots +4',
     },
 
     Dt = {
@@ -54,7 +57,7 @@ local sets = {
         Head = 'nyame helm',
         Neck = 'loricate torque +1',
         Ear1 = 'Odnowa Earring +1',
-        Ear2 = 'Etiolation Earring',
+        Ear2 = 'alabaster Earring',
         Body = 'Nyame Mail',
         Hands = 'Malignance Gloves',
         Ring1 = 'Defending Ring',
@@ -67,7 +70,7 @@ local sets = {
 
     Tp_Default = {
 		main = 'excalibur',
-		sub = 'Sakpata\'s sword',
+		sub = 'thibron',
         Ammo = 'Coiste Bodhar',
         Head = 'Malignance Chapeau',
         Neck = 'Anu Torque',
@@ -97,7 +100,7 @@ local sets = {
         Neck = 'voltsurge torque',--4
         Ear1 = 'malignance Earring',--4
         Ear2 = 'leth. earring +1',--8
-        Body = 'Viti. Tabard +3',--15
+        Body = 'Viti. Tabard +4',--15
 		hands = 'leyline gloves',--6
         Ring1 = 'naji\'s loop',--1
         Ring2 = 'Prolix Ring',--2
@@ -124,12 +127,12 @@ local sets = {
 		main = 'daybreak',
 		sub = 'ammurapi shield',
 		range = 'ullr',
-		ammo = 'chapuli arrow',
+		ammo = empty,
 		Head = 'Atro. Chapeau +2',--12
         Neck = 'voltsurge torque',--4
         Ear1 = 'malignance Earring',--4
         Ear2 = 'leth. earring +1',--8
-        Body = 'Viti. Tabard +3',--15
+        Body = 'Viti. Tabard +4',--15
 		hands = 'leyline gloves',--6
         Ring1 = 'naji\'s loop',--1
         Ring2 = 'Prolix Ring',--2
@@ -161,7 +164,7 @@ local sets = {
     Regen = {
         Main = 'Bolelabunga',
         Sub = 'Ammurapi Shield',
-        Body = 'Viti. Tabard +3',
+        Body = 'Viti. Tabard +4',
 		Back = 'ghostfyre cape',
     },
     Cursna = {
@@ -177,7 +180,7 @@ local sets = {
         --Neck = 'Dls. Torque +1',
         Ear1 = 'Mendi. Earring',
         Ear2 = 'Leth. Earring +1',
-        Body = 'Viti. Tabard +3',
+        Body = 'Viti. Tabard +4',
         Hands = 'Atrophy Gloves +2',
         Ring1 = 'Stikini Ring +1',
         Ring2 = 'Metamor. Ring +1',
@@ -196,6 +199,7 @@ local sets = {
     },
     Phalanx = {},
     Refresh = {
+		head = 'amalric coif +1',
         Body = 'Atrophy Tabard +2',
 		Back = 'ghostfyre cape',
 		Waist = 'Gishdubar Sash',
@@ -211,7 +215,7 @@ local sets = {
         --Neck = 'Dls. Torque +1',
         Ear1 = 'Mendi. Earring',
         Ear2 = 'Leth. Earring +1',
-        Body = 'Viti. Tabard +3',
+        Body = 'Viti. Tabard +4',
         Hands = 'Viti. Gloves +2',
         Ring1 = 'Stikini Ring +1',
         Ring2 = 'Metamor. Ring +1',
@@ -238,7 +242,7 @@ local sets = {
         Back = { Name = 'Sucellos\'s Cape', Augment = { [1] = 'Phys. dmg. taken -10%', [2] = '"Mag. Atk. Bns."+10', [3] = 'Mag. Acc.+20', [4] = 'INT+20', [5] = 'Magic Damage+20' } },
         Waist = 'obstin. sash',
         Legs = 'chironic hose',
-        feet= 'Vitiation Boots +2',
+        feet = 'Viti. Boots +4',
     },
     EnfeeblingACC = {
         Ear1 = 'Snotra Earring',
@@ -250,7 +254,7 @@ local sets = {
         Main = 'Daybreak',
         Sub = 'Ammurapi Shield',
         Range = 'Ullr',
-		ammo = 'chapuli arrow',
+		ammo = empty,
         Head = 'viti. chapeau +4',
 		--Neck = 'Dls. Torque +1',
         Neck = 'null loop',
@@ -263,7 +267,7 @@ local sets = {
         Back = { Name = 'Sucellos\'s Cape', Augment = { [1] = 'Phys. dmg. taken -10%', [2] = '"Mag. Atk. Bns."+10', [3] = 'Mag. Acc.+20', [4] = 'INT+20', [5] = 'Magic Damage+20' } },
         Waist = 'obstin. sash',
         Legs = 'chironic hose',
-        feet= 'Vitiation Boots +2',
+        feet = 'Viti. Boots +4',
     },
     Mind_Enfeebling = {
 		Back = { Name = 'Sucellos\'s Cape', Augment = { [1] = 'Phys. dmg. taken -10%', [2] = 'Mag. Acc.+30', [3] = 'Magic Damage+20', [4] = 'MND+20', [5] = 'Haste+10' } },
@@ -456,7 +460,7 @@ local sets = {
     KOR_Acc = {},
 
     CS = {
-		Body = 'Viti. Tabard +3',
+		Body = 'Viti. Tabard +4',
 	},
 	
 	sab = {
@@ -496,7 +500,7 @@ profile.HandleDefault = function()
         if (gcdisplay.GetCycle('MeleeSet') ~= 'Default') then
 			gFunc.EquipSet('Tp_' .. gcdisplay.GetCycle('MeleeSet')) end
 		if (gcdisplay.GetToggle('TH') == true) then gFunc.EquipSet(sets.TH) end
-        --if (gcdisplay.GetToggle('Fight') == false) then AshitaCore:GetChatManager():QueueCommand(1, '/fight') end
+        if (gcdisplay.GetToggle('Fight') == false) then AshitaCore:GetChatManager():QueueCommand(1, '/fight') end
     elseif (player.Status == 'Resting') then
         gFunc.EquipSet(sets.Resting);
     elseif (player.IsMoving == true) then
@@ -548,9 +552,12 @@ profile.HandlePrecast = function()
 	if (spell.Skill == 'Enfeebling Magic') then
         gFunc.EquipSet(sets.Precast);
         end
-	if string.contains(spell.Name, 'Dispelga') then
-            gFunc.EquipSet(sets.dispelga_precast);
+	if spell.Name == 'Dispelga' and (gcdisplay.GetToggle('Fight') == true) then
+			AshitaCore:GetChatManager():QueueCommand(1, '/fight');
+			elseif spell.Name == 'Dispelga' then
+			gFunc.EquipSet(sets.dispelga_precast);
 		end
+
 
     gcinclude.CheckCancels();
 end
