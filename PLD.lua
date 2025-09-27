@@ -165,12 +165,11 @@ local sets = {
         Head = 'chev. armet +3',--9
         Neck = 'voltsurge torque',--4
         Ear1 = 'loquac. earring', --2
-        Ear2 = 'Etiolation Earring',--1
+        Ear2 = 'alabaster Earring',
         Body = 'Rev. Surcoat +4',--10
         Hands = 'Leyline Gloves',--6
-		Ring1 = 'defending ring',
-		ring2 = 'gelatinous ring +1',
-      --ring2 = 'moonlight ring',
+		Ring1 = 'murky ring',
+		ring2 = 'kishar ring',
 		Back = { Name = 'Rudianos\'s Mantle', Augment = { [1] = '"Fast Cast"+10', [2] = 'Phys. dmg. taken -10%', [3] = 'Mag. Evasion+20', [4] = 'HP+60', [5] = 'Evasion+20' } }, --10    
 		Waist = 'plat. mog. belt',
         Legs = 'odyssean cuisses',--6
@@ -193,7 +192,7 @@ local sets = {
 	    Ear2 = 'Tuisto Earring',
         Body = 'chev. cuirass +3',--20
 		hands = 'regal gauntlets', --10
-		ring1 = 'defending ring',
+		ring1 = 'murky ring',
 		ring2 = 'gelatinous ring +1',
 		--ring2 = 'moonlight ring',
 		Back = { Name = 'Rudianos\'s Mantle', Augment = { [1] = 'Phys. dmg. taken -10%', [2] = 'Evasion+20', [3] = 'HP+60', [4] = 'Mag. Evasion+30', [5] = 'Enmity+10' } },
@@ -217,7 +216,7 @@ local sets = {
         Feet = 'chev. sabatons +3',--15
     },
 
-    Cure = {  --maybe need to fix for Aminon, 95% SIR 39%/50% CurePot, 25%/30%CurePot2 w Majesty
+    Cure = {  --98% SIR(capped w merits) 39%/50% CurePot, 25%/30%CurePot2 w Majesty
         Ammo = 'Staunch Tathlum', --10SIR
         Head = 'Souv. Schaller +1', --15rec/20SIR
         Neck = 'moonlight necklace',--15SIR
@@ -226,8 +225,7 @@ local sets = {
         Body = 'chev. cuirass +3',--20SIR
         Hands = 'Macabre Gaunt. +1', --11
         Ring1 = 'defending ring',
-        Ring2 = 'gelatinous ring +1',
-		--Ring2 = 'Moonlight Ring',
+        Ring2 = 'murky ring',--3SIR
         Back = { Name = 'Rudianos\'s Mantle', Augment = { [1] = 'Phys. dmg. taken -10%', [2] = 'Evasion+20', [3] = 'HP+60', [4] = 'Mag. Evasion+30', [5] = 'Enmity+10' } },
         Waist = 'plat. mog. belt',
         Legs = 'cab. breeches +4',--10SIR
@@ -244,7 +242,7 @@ local sets = {
         Ear2 = 'tuisto Earring',
         Body = 'valorous mail',--4
         Hands = 'souv. handsch. +1', --5
-        Ring1 = 'defending ring',
+        Ring1 = 'murky ring',
         Ring2 = 'gelatinous ring +1',
 		--Ring2 = 'Moonlight Ring',
         Back = 'weard mantle', --5
@@ -303,7 +301,11 @@ local sets = {
         Feet = 'chev. sabatons +3',--15
     },
 
-    Preshot = {},
+    Preshot = {
+		range = 'ullr',
+		ammo = 'chapuli arrow',
+		},
+		
     Midshot = {
 		head = 'nyame helm',
 		neck = 'sanctity necklace',
@@ -784,12 +786,13 @@ profile.HandleMidcast = function()
         gFunc.EquipSet(sets.Reprisal);
     elseif string.match(spell.Name, 'Phalanx') then
         gFunc.EquipSet(sets.Phalanx);
+		return; --if we dont want to override this with SIR even with SIR toggle
     elseif string.match(spell.Name, 'Reprisal') then
         gFunc.EquipSet(sets.Reprisal);
-        -- return; --if we dont want to override this with SIR even with SIR toggle
+        return; --if we dont want to override this with SIR even with SIR toggle
 	elseif string.match(spell.Name, 'Stoneskin') then
         gFunc.EquipSet(sets.Stoneskin);
-        --return; --if we dont want to override this with SIR even with SIR toggle
+        return; --if we dont want to override this with SIR even with SIR toggle
     elseif string.match(spell.Name, 'Flash') then
         gFunc.EquipSet(sets.Flash);
     else
