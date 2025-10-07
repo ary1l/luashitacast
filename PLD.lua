@@ -76,6 +76,7 @@ local sets = {
     Dt = {
 		main = 'burtgang',
 		sub = 'duban',
+		range = empty,
 		ammo = 'staunch tathlum',
         Head = 'chev. armet +3',
         Neck = 'unmoving collar +1',
@@ -459,7 +460,7 @@ local sets = {
         Ear2 = 'thrud Earring',
         Body = 'Nyame Mail',
         Hands = 'Nyame Gauntlets',
-        Ring1 = 'regal Ring',
+        Ring1 = 'sroda ring',
         Ring2 = 'ephramad\'s ring',
         Back = { Name = 'Rudianos\'s Mantle', Augment = { [1] = 'Phys. dmg. taken -10%', [2] = 'STR+30', [3] = 'Accuracy+20', [4] = 'Attack+20', [5] = 'Weapon skill damage +10%' } },
         Waist = 'sailfi belt +1',
@@ -828,7 +829,7 @@ profile.HandleWeaponskill = function()
             gFunc.EquipSet(sets.Chant_Default)
             if (gcdisplay.GetCycle('MeleeSet') ~= 'Default') then
             gFunc.EquipSet('Chant_' .. gcdisplay.GetCycle('MeleeSet')); end
-	    elseif string.match(ws.Name, 'Savage Blade') or string.match(ws.Name, 'Knights of Round') then
+	    elseif string.match(ws.Name, 'Savage Blade') then
             gFunc.EquipSet(sets.Savage_Default)
             if (gcdisplay.GetCycle('MeleeSet') ~= 'Default') then
             gFunc.EquipSet('Savage_' .. gcdisplay.GetCycle('MeleeSet')); end
