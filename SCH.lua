@@ -100,23 +100,23 @@ local sets = {
 
 
     Precast = {
-        Ammo = 'Sapience Orb',
-        Head = 'Peda. M.Board +3',
-        Neck = 'voltsurge torque',
-        Ear1 = 'Loquac. Earring',
-        Ear2 = 'Malignance Earring',
-        Body = 'Agwu\'s Robe',
+        Ammo = 'Sapience Orb', --2
+        Head = 'Peda. M.Board +3', 
+        Neck = 'voltsurge torque', --4
+        Ear1 = 'Loquac. Earring', --2
+        Ear2 = 'Malignance Earring', --4
+        Body = 'pinga tunic +1', --15
         Hands = 'Acad. Bracers +4',
         Ring1 = 'Kishar Ring',
         Ring2 = 'prolix Ring',
         Back = 'Fi Follet Cape +1',
         Waist = 'Embla Sash',
         Legs = 'Pinga Pants +1',--11
-        Feet = 'Acad. Loafers +4',
+        Feet = 'peda. Loafers +1',
     },
     Cure_Precast = {
         Ear1 = 'Mendi. Earring',
-        Feet = 'Vanya Clogs',
+        Feet = 'acad. loafers +4',
     },
     Enhancing_Precast = {
         Waist = 'Siegel Sash',
