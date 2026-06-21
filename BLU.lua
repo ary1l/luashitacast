@@ -4,17 +4,17 @@ gcinclude = gFunc.LoadFile('common\\gcinclude.lua');
 
 local sets = {
     Idle = {
-        Ammo = 'Staunch Tathlum',
+        Ammo = 'Staunch Tathlum +1',
         Head = 'Hashishin Kavuk +3',
         Neck = 'warder\'s charm +1',
         Ear1 = 'alabaster earring',
         Ear2 = 'Etiolation Earring',
         Body = 'Hashishin Mintan +3',
         Hands = 'hashi. bazu. +3',
-        Ring1 = 'Gelatinous ring +1',
+        Ring1 = 'murky ring',
         Ring2 = 'stikini ring +1',
 		Back = { Name = 'Rosmerta\'s Cape', Augment = { [1] = '"Fast Cast"+10', [2] = 'Mag. Evasion+20', [3] = 'AGI+20', [4] = 'Evasion+45' } },
-        Waist = 'null belt',
+        Waist = 'carrier\'s sash',
         Legs = 'hashishin tayt +3',
         Feet = 'nyame sollerets',
     },
@@ -31,19 +31,19 @@ local sets = {
     Idle_Refresh = {
         --Head = 'Rawhide Mask',
         Body = 'Hashishin Mintan +3',
-        --Ring1 = 'Stikini Ring +1',
+        Ring1 = 'Stikini Ring +1',
         Waist = 'Fucho-no-Obi',
     },
 	['Town'] = {
-        Ammo = 'Staunch Tathlum',
+        Ammo = 'Staunch Tathlum +1',
         Head = 'Hashishin Kavuk +3',
         Neck = 'mirage stole +2',
         Ear1 = 'alabaster earring',
         Ear2 = 'Etiolation Earring',
-        Body = 'Assim. Jubbah +4',
+        Body = 'adamantite armor',
         Hands = 'Assim. Bazu. +4',
         Ring1 = 'Stikini Ring +1',
-        Ring2 = 'shneddick ring',
+        Ring2 = 'stikini ring +1',
         Back = 'null shawl',
         Waist = 'Null Belt',
         Legs = 'nyame flanchard',
@@ -51,7 +51,7 @@ local sets = {
     },
 
     Evasion = {--this set will be my idle set when in /cj mode for evasion pulling
-        Ammo = 'Staunch Tathlum',
+        Ammo = 'Staunch Tathlum +1',
         Head = 'nyame helm',
         Neck = 'null loop',
         Ear1 = 'Eabani Earring',
@@ -67,16 +67,17 @@ local sets = {
     },
 	
 	Dt = {
-		Ammo = 'Staunch Tathlum',
-		Neck = 'Loricate Torque +1',
+		Ammo = 'Staunch Tathlum +1',
+		Neck = 'warder\'s charm +1',
 		Ear1 = 'Eabani Earring',
+		Ear2 = 'hearty earring',
         Head = 'Nyame Helm',
-		Body = 'nyame mail',
+		Body = 'adamantite armor',
         Hands = 'nyame gauntlets',
-        Ring1 = 'Defending Ring',
-        Ring2 = 'Gelatinous Ring +1',
-        Back = 'Solemnity Cape',
-		Waist = 'Plat. Mog. Belt',
+        Ring1 = 'stikini ring +1',
+        Ring2 = 'stikini ring +1',
+        Back = 'null shawl',
+		Waist = 'carrier\'s sash',
 		Legs = 'Nyame Flanchard',
         Feet = 'Nyame Sollerets',
 	},
@@ -100,7 +101,8 @@ local sets = {
 	Tp_Hybrid = {
 		--sub = 'thibron',
 		Head = 'Malignance Chapeau',
-		Body = 'Malignance Tabard',
+		ear2 = 'dignitary\'s earring',
+		Body = 'volte harness',
 		Hands = 'Malignance Gloves',
 		Ring2 = 'Chirich Ring +1',
 		Legs = 'malignance tights',
@@ -115,75 +117,75 @@ local sets = {
         Neck = 'voltsurge torque',--4
         Ear1 = 'Loquac. Earring', --2
         Ear2 = 'Etiolation Earring',--1
-        Body = 'Pinga Tunic',--13
+        Body = 'Pinga Tunic +1',--13
         Hands = 'Leyline Gloves',--6
         Ring1 = 'Prolix Ring',--2
-       --Ring2 = 'Kishar Ring',--4
+        Ring2 = 'Kishar Ring',--4
         Back = { Name = 'Rosmerta\'s Cape', Augment = { [1] = '"Fast Cast"+10', [2] = 'Mag. Evasion+20', [3] = 'AGI+20', [4] = 'Evasion+45' } },
         Waist = 'Witful Belt',
-        Legs = 'Pinga Pants',--11
+        Legs = 'Pinga Pants +1',--11
         Feet = 'Carmine Greaves +1',--7
     },
     Blu_Precast = {
 		Ammo = 'Sapience Orb',--2
-        Head = 'Carmine Mask +1',
+        Head = 'Carmine Mask +1',--14
         Neck = 'voltsurge torque',--4
-        Ear1 = 'Loquac. Earring',
+        Ear1 = 'Loquac. Earring',--2
         Ear2 = 'Etiolation Earring',--1
         Body = 'Hashishin Mintan +3',
 		Hands = 'Leyline Gloves',--6
         Ring1 = 'Prolix Ring',--2
-        --Ring2 = 'Kishar Ring',--4
+        Ring2 = 'Kishar Ring',--4
         Back = { Name = 'Rosmerta\'s Cape', Augment = { [1] = '"Fast Cast"+10', [2] = 'Mag. Evasion+20', [3] = 'AGI+20', [4] = 'Evasion+45' } },
         Waist = 'Witful Belt',
-        Legs = 'Pinga Pants',--11
+        Legs = 'Pinga Pants +1',--11
         Feet = 'Carmine Greaves +1',--7
     },
     Stoneskin_Precast = {
 		Ammo = 'Sapience Orb',--2
-        Head = 'Carmine Mask +1',
+        Head = 'Carmine Mask +1',--14
         Neck = 'voltsurge torque',--4
-        Ear1 = 'Loquac. Earring',
+        Ear1 = 'Loquac. Earring',--2
         Ear2 = 'Etiolation Earring',--1
         Body = 'Hashishin Mintan +3',
 		Hands = 'Leyline Gloves',--6
         Ring1 = 'Prolix Ring',--2
-        --Ring2 = 'Kishar Ring',--4
+        Ring2 = 'Kishar Ring',--4
         Back = { Name = 'Rosmerta\'s Cape', Augment = { [1] = '"Fast Cast"+10', [2] = 'Mag. Evasion+20', [3] = 'AGI+20', [4] = 'Evasion+45' } },
         Waist = 'Siegel Sash',
-		Legs = 'Pinga Pants',--11
+		Legs = 'Pinga Pants +1',--11
         Feet = 'Carmine Greaves +1',--7
     },
 
     Cure = {--I cap is 50, II cap is 30
-        Ammo = 'Staunch Tathlum',
-        Head = 'Pinga Crown',--8
-        --Neck = 'Incanter\'s Torque',
+        Ammo = 'Staunch Tathlum +1',
+        --Head = 'Pinga Crown',--8
+        Neck = 'Loricate Torque +1',
         Ear1 = 'Mendi. Earring',--5
         Ear2 = 'Etiolation Earring',
-        Body = 'Pinga Tunic',--13
+        Body = 'Pinga Tunic +1',--13
         Hands = 'Pinga Mittens',--16
         Ring1 = 'Stikini Ring +1',
         Ring2 = 'Metamor. Ring +1',
         Back = 'Solemnity Cape',--7
         Waist = 'Gishdubar Sash',
-        Legs = 'Pinga Pants',--11
+        Legs = 'Pinga Pants +1',--11
         Feet = 'Medium\'s Sabots',--10 atm
     },
     WhiteWind = {--HP+ go!
 		--sub = 'sakpata\'s sword',
-        Ammo = 'Staunch Tathlum',
+        Ammo = 'egoist\'s Tathlum',
         Head = 'nyame helm',
         Neck = 'unmoving collar +1',
-        Ear1 = 'odnowa earring +1',
+        Ear1 = 'alabaster earring',
         Ear2 = 'tuisto Earring',
-        Body = 'Nyame Mail',
+        Body = 'pinga tunic +1',
         Hands = 'Nyame Gauntlets',
         Ring1 = 'Meridian Ring',
         Ring2 = 'gelatinous Ring +1',
         Back = 'Moonbeam Cape',
         Waist = 'plat. mog. belt',
-        Legs = 'Pinga Pants',
+        Legs = 'Pinga Pants +1',
         Feet = 'Carmine Greaves +1',
     },
     BluSkill = {
@@ -218,12 +220,12 @@ local sets = {
         Neck = 'Mirage Stole +2',
         Ear1 = 'Regal Earring',
         Ear2 = 'Hashi. Earring +1',
-        Body = 'Hashishin Mintan +3',
+        Body = 'assim. jubbah +4',
         Hands = 'Hashi. Bazu. +3',
         Ring1 = 'Stikini Ring +1',
-        Ring2 = 'Metamor. Ring +1',
-        Back = { Name = 'Rosmerta\'s Cape', Augment = { [1] = '"Mag. Atk. Bns."+10', [2] = 'Mag. Acc+20', [3] = 'Magic Damage+20', [4] = 'INT+30' } },
-        Waist = 'Yamabuki-no-Obi',
+        Ring2 = 'Stikini Ring +1',
+        Back = 'null shawl',
+        Waist = 'null belt',
         Legs = 'Hashishin Tayt +3',
         Feet = 'Hashi. Basmak +3',
     },
@@ -280,7 +282,7 @@ local sets = {
         Neck = 'Incanter\'s Torque',
         Ear1 = 'Mendi. Earring',
         Ring1 = 'Metamor. Ring +1',
-        --Ring2 = 'Kishar Ring',
+        Ring2 = 'Kishar Ring',
         Back = 'Solemnity Cape',
         Waist = 'Hachirin-no-Obi',
         --Legs = 'Augury Cuisses +1',--in storage probably
@@ -295,7 +297,7 @@ local sets = {
 		range = 'aliyat chakram',
 		ammo = empty,
         Ear1 = 'Telos Earring',
-        --Ear2 = 'Crep. Earring',
+        Ear2 = 'Crep. Earring',
     },
 
     Ws_Default = {
@@ -358,7 +360,7 @@ local sets = {
         Feet = 'nyame sollerets',
     },
     Savage_Hybrid = {
-        Ammo = 'Staunch Tathlum',
+        Ammo = 'Staunch Tathlum +1',
     },
     Savage_Acc = {
     },
@@ -378,7 +380,7 @@ local sets = {
         Feet = 'nyame sollerets',
     },
     Expiacion_Hybrid = {
-        Ammo = 'Staunch Tathlum',
+        Ammo = 'Staunch Tathlum +1',
     },
     Expiacion_Acc = {
     },
@@ -400,7 +402,7 @@ local sets = {
     Requiescat_Acc = {
     },
 	sanguine_Default = {
-        Ammo = 'oshasha\'s treatise',
+        Ammo = 'ghastly tathlum',
         Head = 'Hashishin kavuk +3',
         Neck = 'sibyl ring',
         Ear1 = 'regal Earring',
@@ -446,7 +448,6 @@ local sets = {
         Sub = 'Bunzi\'s Rod',
 	},
 	Movement = {
-		ring1 = 'defending ring',
 		Ring2 = 'shneddick ring',
 	},
 };
