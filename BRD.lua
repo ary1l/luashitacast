@@ -4,20 +4,20 @@ gcinclude = gFunc.LoadFile('common\\gcinclude.lua');
 local sets = {
     ['Idle'] = {
         Main = 'Carnwenhan',
-        Sub = 'Genmei Shield',
-        Range = 'Daurdabla',
-        Head = 'Nyame Helm',
-        Neck = 'null loop',
-        Ear1 = 'genmei Earring',
-		Ear2 = 'Eabani Earring',
-        Body = 'Nyame Mail',
+        Sub = 'ammurapi Shield',
+        Range = 'loughnashade',
+        Head = 'fili calot +3',
+        Neck = 'warder\'s charm +1',
+        Ear1 = 'alabaster earring',
+		Ear2 = 'hearty earring',
+        Body = 'adamantite armor',
         Hands = 'Nyame Gauntlets',
-        Ring1 = 'Defending Ring',
-        Ring2 = 'Moonlight Ring',
-        Back = 'null shawl',
-		waist = 'null belt',
-		legs = 'nyame flanchard',
-        Feet = 'Nyame Sollerets',	
+        Ring1 = 'murky Ring',
+        Ring2 = 'shadow ring',
+        Back = 'shadow mantle',
+		waist = 'carrier\'s sash',
+		legs = 'fili rhingrave +3',
+        Feet = 'bihu slippers +4',	
     },
     Resting = {},
     Idle_Regen = {
@@ -32,75 +32,76 @@ local sets = {
     Town = {
         Main = 'Carnwenhan',
         Sub = 'Ammurapi Shield',
-        Range = 'Daurdabla',
-        Head = 'Fili Calot +2',
-        Neck = 'Mnbw. Whistle +1',
-        Body = 'Bihu Just. +4',
-        Hands = 'Fili Manchettes +2',
-        Back = 'null shawl',
-        Legs = 'Fili Rhingrave +2',
-        Feet = 'Brioso Slippers +4',
+        Range = 'loughnashade',
+        Head = 'nyame helm',
+        Neck = 'warder\'s charm +1',
+        Body = 'adamantite armor',
+        Hands = 'brioso cuffs +4',
+        Back = 'shadow mantle',
+        Legs = 'revelation brais',
+        Feet = 'bihu slippers +4',
     },
 
     Dt = {
-        Sub = 'Genbu\'s Shield',
-        Head = 'Nyame Helm',
-        Neck = 'Loricate Torque +1',
-        Ear1 = 'Odnowa Earring +1',
-		ear2 = 'eabani earring',
-        --Ear2 = 'Etiolation Earring',
-        Body = 'Ashera Harness',
+        Head = 'fili calot +3',
+        Neck = 'warder\'s charm +1',
+        Ear1 = 'alabaster earring',
+        ear2 = 'eabani Earring',
+        Body = 'adamantite armor',
         Hands = 'Nyame Gauntlets',
-        Ring1 = 'Defending Ring',
-        Ring2 = 'Moonlight Ring',
-        Back = 'Solemnity Cape',
-        Waist = 'null belt',
+        Ring1 = 'fortified ring',
+        Ring2 = 'shadow ring',
+        Back = 'shadow mantle',
+        Waist = 'carrier\'s sash',
         Legs = 'Nyame Flanchard',
         Feet = 'Nyame Sollerets',
     },
 
     Tp_Default = {
-        Main = 'naegling',
-        Sub = 'Fusetto +2',
-        Range = { Name = 'Linos', Augment = { [1] = 'Accuracy+15', [2] = '"Store TP"+3', [3] = 'Quadruple Attack +3' } },
-        Head = 'Aya. Zucchetto +2',
+		Main = 'naegling',
+        Sub = 'fusetto +2',
+        Range = { Name = 'Linos', Augment = { [1] = 'Accuracy+13', [2] = '"Store TP"+4', [3] = 'Attack+13', [4] = 'Quadruple Attack +3' } },
+        Head = 'perfection masque',
         Neck = 'Bard\'s Charm +2',
         Ear1 = 'Telos Earring',
-        Ear2 = 'cessance Earring',
-        Body = 'Ashera Harness',
+        Ear2 = 'eabani Earring',
+        Body = 'perfection plate.',
         Hands = 'Bunzi\'s gloves',
         Ring1 = 'Moonlight Ring',
         Ring2 = 'Chirich Ring +1',
         Back = 'null shawl',
-        Waist = 'Sailfi Belt +1',
-        Legs = 'Nyame Flanchard',
-        Feet = 'Volte Spats',
+        Waist = 'reiki yotai',
+        Legs = 'revelation brais',
+        Feet = 'revelation sab.',
     },
     Tp_Hybrid = {
+		sub = 'genmei shield',
+		ammo = 'hoxne ampulla',
+		ear2 = 'cessance earring',
+		waist = 'sailfi belt +1',
     },
     Tp_Acc = {
-        Ring1 = 'Cacoethic Ring +1',
-        Ring2 = 'Chirich Ring +1',
+        main = 'carnwenhan',
+		sub = 'gleti\'s knife',
     },
 
 
     Precast = { --74
         Main = 'Carnwenhan',
         Sub = 'Kali',
-        Range = 'Gjallarhorn',
-        --Head = 'Haruspex Hat', --8
-        Neck = 'Baetyl Pendant', --4
-        Ear1 = 'Loquacious Earring',
-        Ear2 = 'Etiolation Earring', --1
-        Body = 'Inyanga Jubbah +2', --14
-        Hands = 'Gende. Gages +1', --6
+        Range = 'loughnashade',
+        Head = 'Bunzi\'s Hat', --10
+        Neck = 'voltsurge torque',
+        Ear1 = 'Loquac. Earring',
+        Ear2 = 'Etiolation Earring', --2
+		Body = 'Inyanga Jubbah +2', --14
+        Hands = 'leyline gloves', --6
         Ring1 = 'Prolix Ring', --2
-		Ring2 = 'weather. ring',
-        --Ring2 = 'Kishar Ring', --5
-        Back = { Name = 'Intarabus\'s Cape', Augment = { [1] = '"Fast Cast"+10', [2] = 'Mag. Acc.+20', [3] = 'CHR+30', [4] = 'Phys. dmg. taken -10%', [5] = 'Magic Damage+20' } },
-        Waist = 'Shinjutsu-no-Obi +1', --5
+        Ring2 = 'Kishar Ring', --5
+        Back = 'fi follet cape +1',
+        Waist = 'witful belt', --3
         Legs = 'Kaykaus tights +1', --6
-        Feet = 'Fili Cothurnes +2',
+        Feet = 'Fili Cothurnes +3',
     },
     Cure_Precast = {
         Ear1 = 'Mendi. Earring',
@@ -111,64 +112,62 @@ local sets = {
     },
     Stoneskin_Precast = {
         Head = 'Umuthi Hat',
+		neck = 'stone gorget',
         Waist = 'Siegel Sash',
-		legs = 'doyen pants',
+		legs = 'haven hose',
     },
     Song_Precast = { --87
 		Main = 'Carnwenhan',
 		Sub = 'Kali',
-		Range = 'Gjallarhorn',
-        Head = 'Fili Calot +2', --14
-        Neck = 'Loricate Torque +1',
+		Range = 'loughnashade',
+        Head = 'Fili Calot +3', --14
+        Neck = 'voltsurge torque',
         Ear1 = 'loquac. earring',
-        Ear2 = 'fili Earring',
-        Body = 'Inyanga Jubbah +2', --14
-        Hands = 'Gende. Gages +1', --6
+        Ear2 = 'Etiolation earring',
+		Body = 'Inyanga Jubbah +2', --14
+		Hands = 'Gende. Gages +1', --6
         Ring1 = 'Prolix Ring',
-        Ring2 = 'weather. ring',
-		--Ring2 = 'Kishar Ring', --5
-        Back = { Name = 'Intarabus\'s Cape', Augment = { [1] = '"Fast Cast"+10', [2] = 'Mag. Acc.+20', [3] = 'CHR+30', [4] = 'Phys. dmg. taken -10%', [5] = 'Magic Damage+20' } },
-        Waist = 'Shinjutsu-no-Obi +1', --5
-        Legs = 'Kaykaus tights +1', --6
-        Feet = 'Fili Cothurnes +2',
+        Ring2 = 'Kishar Ring', --5
+        Back = 'fi follet cape +1',
+        Waist = 'witful belt', --3
+		Legs = 'Kaykaus tights +1', --6
+        Feet = 'Fili Cothurnes +3',
     },
 
 	Honor_Precast = { --87
         Main = 'Carnwenhan',
 		Sub = 'Kali',
 		Range = 'Marsyas',
-        Head = 'Fili Calot +2', --14
-        Neck = 'Loricate Torque +1',
+        Head = 'Fili Calot +3', --14
+        Neck = 'voltsurge torque',
         Ear1 = 'loquac. earring',
-        Ear2 = 'fili Earring',
-        Body = 'Inyanga Jubbah +2', --14
-        Hands = 'Gende. Gages +1', --6
+        Ear2 = 'Etiolation earring',
+		Body = 'Inyanga Jubbah +2', --14
+		Hands = 'Gende. Gages +1', --7
         Ring1 = 'Prolix Ring',
-        Ring2 = 'weather.ring',
-		--Ring2 = 'Kishar Ring', --5
-        Back = { Name = 'Intarabus\'s Cape', Augment = { [1] = '"Fast Cast"+10', [2] = 'Mag. Acc.+20', [3] = 'CHR+30', [4] = 'Phys. dmg. taken -10%', [5] = 'Magic Damage+20' } },
-        Waist = 'Shinjutsu-no-Obi +1', --5
-        Legs = 'Kaykaus tights +1', --6
-        Feet = 'Fili Cothurnes +2',
+        Ring2 = 'Kishar Ring', --5
+        Back = 'fi follet cape +1',
+        Waist = 'witful belt', --3
+		Legs = 'Kaykaus tights +1', --7
+        Feet = 'Fili Cothurnes +3',
     },
 
 	Aria_Precast = { --87
         Main = 'Carnwenhan',
 		Sub = 'Kali',
 		Range = 'Loughnashade',
-        Head = 'Fili Calot +2', --14
-        Neck = 'Loricate Torque +1',
-        Ear1 = 'loquac. earring',
-        Ear2 = 'fili Earring',
-        Body = 'Inyanga Jubbah +2', --14
-        Hands = 'Gende. Gages +1', --6
-        Ring1 = 'Prolix Ring',
-        Ring2 = 'Defending Ring',
-		--Ring2 = 'Kishar Ring', --5
-        Back = { Name = 'Intarabus\'s Cape', Augment = { [1] = '"Fast Cast"+10', [2] = 'Mag. Acc.+20', [3] = 'CHR+30', [4] = 'Phys. dmg. taken -10%', [5] = 'Magic Damage+20' } },
-        Waist = 'Shinjutsu-no-Obi +1', --5
-        Legs = 'Kaykaus tights +1', --6
-        Feet = 'Fili Cothurnes +2',
+        Head = 'Fili Calot +3', --14
+        Neck = 'voltsurge torque',--4
+        Ear1 = 'loquac. earring', --2
+        Ear2 = 'etiolation Earring', --2
+		Body = 'Inyanga Jubbah +2', --14
+		Hands = 'Gende. Gages +1', --7
+        Ring1 = 'Prolix Ring',--2
+        Ring2 = 'Kishar Ring', --5
+        Back = 'fi follet cape +1',
+        Waist = 'witful belt', --3
+		Legs = 'Kaykaus tights +1', --7
+        Feet = 'Fili Cothurnes +3',--13
     },
 	
     Cure = {--I cap is 50, II cap is 30
@@ -179,17 +178,17 @@ local sets = {
         Ear1 = 'Mendi. Earring',--I 5
         Ear2 = 'Regal Earring',
         Hands = 'Nyame Gauntlets',
-        --Ring1 = 'Stikini Ring +1',
+        Ring1 = 'Stikini Ring +1',
         Ring2 = 'Metamor. Ring +1',
-        Back = 'Aurist\'s Cape +1',
-		Legs = 'Kaykaus tights +1', --6
+        Back = 'Solemnity Cape',
+		Legs = 'Kaykaus tights +1', --7
         Waist = 'Rumination Sash',
         Feet = 'Vanya Clogs',--I 10
     },
     Self_Cure = {--cap 30
         Waist = 'Gishdubar Sash',
     },
-    Regen = {
+    Regen = {	
         Main = 'Bolelabunga',
         Sub = 'Ammurapi Shield',
         Body = 'Telchine Chas.',
@@ -210,10 +209,10 @@ local sets = {
         Ear2 = 'Andoaa Earring',
         Body = 'Telchine Chas.',
         Hands = 'Nyame Gauntlets',
-        Ring1 = 'Defending Ring',
+        Ring1 = 'murky Ring',
         Ring2 = 'Metamor. Ring +1',
         Back = 'Solemnity Cape',
-        Waist = 'Shinjutsu-no-Obi +1',
+        Waist = 'witful belt',
         Legs = 'Telchine Braconi',
         Feet = 'Telchine Pigaches',
     },
@@ -235,46 +234,44 @@ local sets = {
         Body = 'Brioso Justau. +2',
         Hands = 'Brioso Cuffs +2',
         Ring1 = 'metamor. ring +1',
-        Ring2 = 'weather. ring',
+        Ring2 = 'kishar ring',
         Back = 'Aurist\'s Cape +1',
-        Waist = 'Acuity Belt +1',
-        Legs = 'Fili Rhingrave +2',
+        Waist = 'null belt',
+        Legs = 'Fili Rhingrave +3',
         Feet = 'Brioso Slippers +4',
     },
 
     Wind = {
         Main = 'Carnwenhan',
 		Sub = 'Ammurapi Shield',
-        Range = 'Gjallarhorn',
+        Range = 'loughnashade',
         Head = 'Brioso Roundlet +2',
         Neck = 'Mnbw. Whistle +1',
         Ear1 = 'loquac. earring',
-        Ear2 = 'fili Earring',
+        Ear2 = 'etiolation 	Earring',
         Body = 'Fili Hongreline +3',
         Hands = 'Brioso Cuffs +2',
-        --Ring1 = 'Stikini Ring +1',
-		Ring1 = "defending ring",
-        Ring2 = 'weather. ring',
-        Back = { Name = 'Intarabus\'s Cape', Augment = { [1] = '"Fast Cast"+10', [2] = 'Mag. Acc.+20', [3] = 'CHR+30', [4] = 'Phys. dmg. taken -10%', [5] = 'Magic Damage+20' } },
-        Waist = { Name = 'Acuity Belt +1', AugPath='A' },
-        Legs = 'Fili Rhingrave +2',
+        Ring1 = 'Stikini Ring +1',
+        Ring2 = 'kishar ring',
+        Back = 'fi follet cape +1',
+        Waist = 'witful belt',
+        Legs = 'Fili Rhingrave +3',
         Feet = 'Brioso Slippers +4',
     },
 	Aria = {
         Main = 'Carnwenhan',
 		sub = 'Kali',
         Range = 'Loughnashade',
-        Head = 'Fili Calot +2',
+        Head = 'Fili Calot +3',
         Neck = 'Mnbw. Whistle +1',
         Ear1 = 'loquac. earring',
-        Ear2 = 'fili Earring',
+        Ear2 = 'etiolation 	Earring',
         Body = 'Fili Hongreline +3',
-        Hands = 'Fili Manchettes +2',
-        --Ring1 = 'Stikini Ring +1',
-		Ring1 = "defending ring",
-        Ring2 = 'weather. ring',
-        Back = { Name = 'Intarabus\'s Cape', Augment = { [1] = '"Fast Cast"+10', [2] = 'Mag. Acc.+20', [3] = 'CHR+30', [4] = 'Phys. dmg. taken -10%', [5] = 'Magic Damage+20' } },
-        Waist = 'null belt',
+        Hands = 'Fili Manchettes +3',
+        Ring1 = 'Stikini Ring +1',
+        Ring2 = 'kishar ring',
+        Back = 'fi follet cape +1',
+        Waist = 'witful belt',
         Legs = 'Inyanga Shalwar +2',
         Feet = 'Brioso Slippers +4',
     },
@@ -282,17 +279,16 @@ local sets = {
         Main = 'Carnwenhan',
 		sub = 'kali',
         Range = 'Marsyas',
-        Head = 'Fili Calot +2',
+        Head = 'Fili Calot +3',
         Neck = 'Mnbw. Whistle +1',
         Ear1 = 'loquac. earring',
-        Ear2 = 'fili Earring',
+        Ear2 = 'etiolation 	Earring',
         Body = 'Fili Hongreline +3',
-        Hands = 'Fili Manchettes +2',
-        --Ring1 = 'Stikini Ring +1',
-		Ring1 = "defending ring",
-        Ring2 = 'weather. ring',
-        Back = { Name = 'Intarabus\'s Cape', Augment = { [1] = '"Fast Cast"+10', [2] = 'Mag. Acc.+20', [3] = 'CHR+30', [4] = 'Phys. dmg. taken -10%', [5] = 'Magic Damage+20' } },
-        Waist = 'null belt',
+        Hands = 'Fili Manchettes +3',
+        Ring1 = 'Stikini Ring +1',
+        Ring2 = 'kishar ring',
+        Back = 'fi follet cape +1',
+        Waist = 'witful belt',
         Legs = 'Inyanga Shalwar +2',
         Feet = 'Brioso Slippers +4',
     },
@@ -309,13 +305,13 @@ local sets = {
         Head = 'Brioso Roundlet +2',
         Neck = 'Mnbw. Whistle +1',
         Ear1 = 'regal earring',
-        Ear2 = 'fili Earring',
+        Ear2 = 'fili Earring +1',
         Body = 'Fili Hongreline +3',
-        Hands = 'Brioso Cuffs +2',
-		Ring1 = 'Metamor. Ring +1',
-        Ring2 = 'Weather. Ring',
-        Back = { Name = 'Intarabus\'s Cape', Augment = { [1] = '"Fast Cast"+10', [2] = 'Mag. Acc.+20', [3] = 'CHR+30', [4] = 'Phys. dmg. taken -10%', [5] = 'Magic Damage+20' } },
-        Waist = 'Acuity Belt +1',
+        Hands = 'Brioso Cuffs +4',
+		Ring1 = 'stikini ring +1',
+        Ring2 = 'stikini ring +1',
+        Back = 'null shawl',
+        Waist = 'null belt',
         Legs = 'Inyanga Shalwar +2',
         Feet = 'Bihu Slippers +4',
     },
@@ -329,9 +325,9 @@ local sets = {
         Ear2 = 'Regal Earring',
         Body = 'Brioso Justau. +2',
         Hands = 'Inyan. Dastanas +2',
-		Ring1 = 'Metamor. Ring +1',
-        Ring2 = 'Weather. Ring',
-        Back = { Name = 'Intarabus\'s Cape', Augment = { [1] = '"Fast Cast"+10', [2] = 'Mag. Acc.+20', [3] = 'CHR+30', [4] = 'Phys. dmg. taken -10%', [5] = 'Magic Damage+20' } },
+		Ring1 = 'stikini ring +1',
+        Ring2 = 'stikini ring +1',
+        Back = 'null shawl',
         Waist = 'Harfner\'s Sash',
         Legs = 'Inyanga Shalwar +2',
         Feet = 'Bihu Slippers +4',
@@ -339,60 +335,60 @@ local sets = {
     Buff = {
         Main = 'Carnwenhan',
         Sub = 'Kali',
-        Range = 'Gjallarhorn',
-        Head = 'Fili Calot +2',
+        Range = 'loughnashade',
+        Head = 'Fili Calot +3',
         Neck = 'Mnbw. Whistle +1',
         Ear1 = 'loquac. earring',
-        Ear2 = 'fili Earring',
+        Ear2 = 'etiolation Earring',
         Body = 'Fili Hongreline +3',
-        Hands = 'Fili Manchettes +2',
-        Ring1 = 'Defending Ring',
+        Hands = 'Fili Manchettes +3',
+        Ring1 = 'murky Ring',
         Ring2 = 'Moonlight Ring',
-        Back = { Name = 'Intarabus\'s Cape', Augment = { [1] = '"Fast Cast"+10', [2] = 'Mag. Acc.+20', [3] = 'CHR+30', [4] = 'Phys. dmg. taken -10%', [5] = 'Magic Damage+20' } },
-        Waist = 'null belt',
+        Back = 'fi follet cape +1',
+        Waist = 'witful belt',
         Legs = 'Inyanga Shalwar +2',
         Feet = 'Brioso Slippers +4',
     },
     Paeon = {
         Main = 'Carnwenhan',
         Sub = 'Kali',
-        Range = 'Gjallarhorn',
+        Range = 'loughnashade',
 		Ear1 = 'loquac. earring',
-        Ear2 = 'fili Earring',
-        Ring1 = 'Defending Ring',
-		Ring2 = 'weather. Ring',
-        Back = { Name = 'Intarabus\'s Cape', Augment = { [1] = '"Fast Cast"+10', [2] = 'Mag. Acc.+20', [3] = 'CHR+30', [4] = 'Phys. dmg. taken -10%', [5] = 'Magic Damage+20' } },
-        Waist = 'Shinjutsu-no-Obi +1',
+        Ear2 = 'etiolation 	Earring',
+        Ring1 = 'murky Ring',
+		Ring2 = 'kishar Ring',
+        Back = 'fi follet cape +1',
+        Waist = 'witful belt',
         Legs = 'Inyanga Shalwar +2',
-        Feet = 'Fili Cothurnes +2',
+        Feet = 'Fili Cothurnes +3',
     },
 	Dummy = {--you can also use /forcestring if you want
         Main = 'Carnwenhan',
 		Sub = 'Ammurapi Shield',
         Range = 'Daurdabla',
         Ear1 = 'loquac. earring',
-        Ear2 = 'fili Earring',
-        Ring1 = 'Defending Ring',
-		Ring2 = 'weather. Ring',
-        Back = { Name = 'Intarabus\'s Cape', Augment = { [1] = '"Fast Cast"+10', [2] = 'Mag. Acc.+20', [3] = 'CHR+30', [4] = 'Phys. dmg. taken -10%', [5] = 'Magic Damage+20' } },
-        Waist = 'Shinjutsu-no-Obi +1',
+        Ear2 = 'etiolation 	Earring',
+        Ring1 = 'murky Ring',
+		Ring2 = 'kishar Ring',
+        Back = 'fi follet cape +1',
+        Waist = 'witful belt',
         Legs = 'Inyanga Shalwar +2',
-        Feet = 'Fili Cothurnes +2',
+        Feet = 'Fili Cothurnes +3',
     },
     March = {
 		Main = 'Carnwenhan',
         Sub = 'Kali',
-        Range = 'Gjallarhorn',
-        Head = 'Fili Calot +2',
+        Range = 'loughnashade',
+        Head = 'Fili Calot +3',
         Neck = 'Mnbw. Whistle +1',
         Ear1 = 'loquac. earring',
-        Ear2 = 'fili Earring',
+        Ear2 = 'etiolation Earring',
         Body = 'Fili Hongreline +3',
-        Hands = 'Fili Manchettes +2',
-        Ring1 = 'Defending Ring',
+        Hands = 'Fili Manchettes +3',
+        Ring1 = 'murky Ring',
         Ring2 = 'Moonlight Ring',
-        Back = { Name = 'Intarabus\'s Cape', Augment = { [1] = '"Fast Cast"+10', [2] = 'Mag. Acc.+20', [3] = 'CHR+30', [4] = 'Phys. dmg. taken -10%', [5] = 'Magic Damage+20' } },
-        Waist = 'null belt',
+        Back = 'fi follet cape +1',
+        Waist = 'witful belt',
         Legs = 'Inyanga Shalwar +2',
         Feet = 'Brioso Slippers +4',
 		},
@@ -400,88 +396,88 @@ local sets = {
     Madrigal = {
         Main = 'Carnwenhan',
         Sub = 'Kali',
-        Range = 'Gjallarhorn',
-        Head = 'Fili Calot +2',
+        Range = 'loughnashade',
+        Head = 'Fili Calot +3',
         Neck = 'Mnbw. Whistle +1',
         Ear1 = 'loquac. earring',
-        Ear2 = 'fili Earring',
+        Ear2 = 'etiolation Earring',
         Body = 'Fili Hongreline +3',
-        Hands = 'Fili Manchettes +2',
-        Ring1 = 'Defending Ring',
+        Hands = 'Fili Manchettes +3',
+        Ring1 = 'murky Ring',
         Ring2 = 'Moonlight Ring',
-        Back = { Name = 'Intarabus\'s Cape', Augment = { [1] = '"Fast Cast"+10', [2] = 'Mag. Acc.+20', [3] = 'CHR+30', [4] = 'Phys. dmg. taken -10%', [5] = 'Magic Damage+20' } },
-        Waist = 'null belt',
+        Back = 'fi follet cape +1',
+        Waist = 'witful belt',
         Legs = 'Inyanga Shalwar +2',
         Feet = 'Brioso Slippers +4',
     },
     Ballad = {
 		Main = 'Carnwenhan',
         Sub = 'Kali',
-        Range = 'Gjallarhorn',
-        Head = 'Fili Calot +2',
+        Range = 'loughnashade',
+        Head = 'Fili Calot +3',
         Neck = 'Mnbw. Whistle +1',
         Ear1 = 'loquac. earring',
-        Ear2 = 'fili Earring',
+        Ear2 = 'etiolation Earring',
         Body = 'Fili Hongreline +3',
-        Hands = 'Fili Manchettes +2',
-        Ring1 = 'Defending Ring',
-        Ring2 = 'Moonlight Ring',
-        Back = { Name = 'Intarabus\'s Cape', Augment = { [1] = '"Fast Cast"+10', [2] = 'Mag. Acc.+20', [3] = 'CHR+30', [4] = 'Phys. dmg. taken -10%', [5] = 'Magic Damage+20' } },
-        Waist = 'null belt',
+        Hands = 'Fili Manchettes +3',
+        Ring1 = 'murky Ring',
+        Ring2 = 'defending Ring',
+        Back = 'fi follet cape +1',
+        Waist = 'witful belt',
         Legs = 'Inyanga Shalwar +2',
         Feet = 'Brioso Slippers +4',
     },
 	Mambo = {
 		Main = 'Carnwenhan',
         Sub = 'Kali',
-        Range = 'Gjallarhorn',
-        Head = 'Fili Calot +2',
+        Range = 'loughnashade',
+        Head = 'Fili Calot +3',
         Neck = 'Mnbw. Whistle +1',
         Ear1 = 'loquac. earring',
-        Ear2 = 'fili Earring',
+        Ear2 = 'etiolation Earring',
         Body = 'Fili Hongreline +3',
-        Hands = 'Fili Manchettes +2',
-        Ring1 = 'Defending Ring',
-        Ring2 = 'Moonlight Ring',
-        Back = { Name = 'Intarabus\'s Cape', Augment = { [1] = '"Fast Cast"+10', [2] = 'Mag. Acc.+20', [3] = 'CHR+30', [4] = 'Phys. dmg. taken -10%', [5] = 'Magic Damage+20' } },
-        Waist = 'null belt',
+        Hands = 'Fili Manchettes +3',
+        Ring1 = 'murky Ring',
+        Ring2 = 'defending Ring',
+        Back = 'fi follet cape +1',
+        Waist = 'witful belt',
         Legs = 'Inyanga Shalwar +2',
-        Feet = 'Mousai crackows',
+        Feet = 'Mousai crackows +1',
     },
 	
 	Etude = {
         Main = 'Carnwenhan',
         Sub = 'Kali',
-        Range = 'Gjallarhorn',
+        Range = 'loughnashade',
         Head = 'Mousai turban',
         Neck = 'Mnbw. Whistle +1',
         Ear1 = 'loquac. earring',
-        Ear2 = 'fili Earring',
+        Ear2 = 'etiolation Earring',
         Body = 'Fili Hongreline +3',
-        Hands = 'Fili Manchettes +2',
-        Ring1 = 'Defending Ring',
+        Hands = 'Fili Manchettes +3',
+        Ring1 = 'murky Ring',
         Ring2 = 'Moonlight Ring',
-        Back = { Name = 'Intarabus\'s Cape', Augment = { [1] = '"Fast Cast"+10', [2] = 'Mag. Acc.+20', [3] = 'CHR+30', [4] = 'Phys. dmg. taken -10%', [5] = 'Magic Damage+20' } },
-        Waist = 'null belt',
+        Back = 'fi follet cape +1',
+        Waist = 'witful belt',
         Legs = 'Inyanga Shalwar +2',
         Feet = 'Brioso Slippers +4',
     },
     Scherzo = {
 		Main = 'Carnwenhan',
         Sub = 'Kali',
-        Range = 'Gjallarhorn',
-        Head = 'Fili Calot +2',
+        Range = 'loughnashade',
+        Head = 'Fili Calot +3',
         Neck = 'Mnbw. Whistle +1',
         Ear1 = 'loquac. earring',
-        Ear2 = 'fili Earring',
+        Ear2 = 'etiolation Earring',
         Body = 'Fili Hongreline +3',
-        Hands = 'Fili Manchettes +2',
-        Ring1 = 'Defending Ring',
+        Hands = 'Fili Manchettes +3',
+        Ring1 = 'murky Ring',
         Ring2 = 'Moonlight Ring',
-        Back = { Name = 'Intarabus\'s Cape', Augment = { [1] = '"Fast Cast"+10', [2] = 'Mag. Acc.+20', [3] = 'CHR+30', [4] = 'Phys. dmg. taken -10%', [5] = 'Magic Damage+20' } },
-        Waist = 'null belt',
+        Back = 'fi follet cape +1',
+        Waist = 'witful belt',
         Legs = 'Inyanga Shalwar +2',
-        Feet = 'Fili Cothurnes +2',
+        Feet = 'Fili Cothurnes +3',
     },
 
     Drain = {},
@@ -492,19 +488,19 @@ local sets = {
     
 	--Preshot = {},
     --Midshot = {
-        --Ear1 = 'Telos Earring',
-        --Ear2 = 'Crep. Earring',
+        Ear1 = 'Telos Earring',
+        Ear2 = 'Crep. Earring',
     --},
 
     Ws_Default = {
-        Range = { Name = 'Linos', Augment = { [1] = 'Accuracy+12', [2] = 'STR+8', [3] = 'Attack+12', [4] = 'Weapon skill damage +2%' } },
+        Range = { Name = 'Linos', Augment = { [1] = 'Weapon skill damage +2%', [2] = 'Attack+13', [3] = 'STR+8' } },
         Head = 'Nyame Helm',
         Neck = 'Bard\'s Charm +2',
-        Ear1 = 'Brutal Earring',
-        Ear2 = 'Telos Earring',
+        Ear1 = 'telos Earring',
+        Ear2 = 'brutal Earring',
         Body = 'Bihu Just. +4',
         Hands = 'Nyame Gauntlets',
-        Ring1 = ' Ephramad\'s Ring',
+        Ring1 = 'Ephramad\'s Ring',
         Ring2 = 'Ilabrat Ring',
         Back = { Name = 'Intarabus\'s Cape', Augment = { [1] = 'Phys. dmg. taken -10%', [2] = 'STR+30', [3] = 'Accuracy+20', [4] = 'Attack+20', [5] = 'Weapon skill damage +10%' } },
         Waist = 'Salifi Belt +1',
@@ -515,27 +511,33 @@ local sets = {
     Ws_Acc = {},
 
     Mordant_Default = {
-        Range = { Name = 'Linos', Augment = { [1] = 'Accuracy+12', [2] = 'STR+8', [3] = 'Attack+12', [4] = 'Weapon skill damage +2%' } },
+        Range = { Name = 'Linos', Augment = { [1] = 'Weapon skill damage +2%', [2] = 'Attack+13', [3] = 'STR+8' } },
+		Head = 'Nyame Helm',
         Neck = 'Bard\'s Charm +2',
+		ear1 = 'ishvara earring',
+		ear2 = 'regal earring',
         Body = 'Bihu Just. +4',
-        Ring1 = 'Apate Ring',
-        Ring2 = 'Ilabrat Ring',
+		Hands = 'Nyame Gauntlets',
+        Ring1 = 'Ephramad\'s Ring',
+        Ring2 = 'metamor. Ring +1',
         Back = { Name = 'Intarabus\'s Cape', Augment = { [1] = 'Phys. dmg. taken -10%', [2] = 'STR+30', [3] = 'Accuracy+20', [4] = 'Attack+20', [5] = 'Weapon skill damage +10%' } },
         Waist = 'Sailfi Belt +1',
+		Legs = 'Nyame Flanchard',
+        Feet = 'Nyame Sollerets',
     },
     Mordant_Hybrid = {},
     Mordant_Acc = {},
 
     Savage_Default = {
-        Range = { Name = 'Linos', Augment = { [1] = 'Accuracy+12', [2] = 'STR+8', [3] = 'Attack+12', [4] = 'Weapon skill damage +2%' } },
+        Range = { Name = 'Linos', Augment = { [1] = 'Weapon skill damage +2%', [2] = 'Attack+13', [3] = 'STR+8' } },
 		head = 'nyame helm',
         Neck = 'Bard\'s Charm +2',
-		ear1 = 'regal earring',
-		ear2 = 'telos earring',
+		ear1 = 'telos earring',
+		ear2 = 'regal earring',
 		Body = 'Bihu Just. +4',
 		hands = 'nyame Gauntlets',
         Ring1 = 'Ephramad\'s Ring',
-        Ring2 = 'Metamor. Ring +1',
+        Ring2 = 'sroda ring',
         Back = { Name = 'Intarabus\'s Cape', Augment = { [1] = 'Phys. dmg. taken -10%', [2] = 'STR+30', [3] = 'Accuracy+20', [4] = 'Attack+20', [5] = 'Weapon skill damage +10%' } },
         Waist = 'Sailfi Belt +1',
 		Legs = 'Nyame Flanchard',
@@ -555,7 +557,7 @@ local sets = {
 		Feet = 'Volte Boots',
 	},
     Movement = {
-        Feet = 'Fili Cothurnes +2',
+        Feet = 'Fili Cothurnes +3',
 	},
 };
 profile.Sets = sets;
@@ -584,8 +586,7 @@ profile.HandleDefault = function()
         if (gcdisplay.GetCycle('MeleeSet') ~= 'Default') then
 			gFunc.EquipSet('Tp_' .. gcdisplay.GetCycle('MeleeSet')) end
 		if (gcdisplay.GetToggle('TH') == true) then gFunc.EquipSet(sets.TH) end
-		if (gcdisplay.GetToggle('Fight') == false) then
-            AshitaCore:GetChatManager():QueueCommand(1, '/fight') end
+		if (gcdisplay.GetToggle('Fight') == false) then AshitaCore:GetChatManager():QueueCommand(1, '/fight') end
 	elseif (player.Status == 'Resting') then
         gFunc.EquipSet(sets.Resting);
     elseif (player.IsMoving == true) then
@@ -598,7 +599,7 @@ profile.HandleDefault = function()
     if (gcdisplay.GetToggle('DTset') == true) then gFunc.EquipSet(sets.Dt) end;
     if (gcdisplay.GetToggle('Kite') == true) then gFunc.EquipSet(sets.Movement) end;
 end
-
+    
 profile.HandleAbility = function()
     local ability = gData.GetAction();
     
@@ -609,16 +610,14 @@ profile.HandleAbility = function()
         
         gFunc.EquipSet(sets.Nitro)
 
-        -- Turn off /fight if active to allow gear swap
+        --Turn off /fight if active to allow gear swap
         if gcdisplay.GetToggle('Fight') == true then
             AshitaCore:GetChatManager():QueueCommand(1, '/fight')
-            gcdisplay.SetToggle('Fight', false) --
-        end
+       end
     end
 
     gcinclude.CheckCancels();
 end
-
 
 profile.HandleItem = function()
     local item = gData.GetAction();
@@ -691,7 +690,7 @@ profile.HandleMidcast = function()
             gFunc.EquipSet(sets.Drain);
         end
     elseif (spell.Skill == 'Singing') then
-        if (string.contains(spell.Name, 'Paeon')) then
+        if (string.contains(spell.Name, 'Army\'s Paeon III')) or (string.contains(spell.Name, 'Army\'s Paeon IV')) or (string.contains(spell.Name, 'Army\'s Paeon V')) then
             gFunc.EquipSet(sets.Paeon);
         elseif (string.contains(spell.Name, 'Victory March')) or (string.contains(spell.Name, 'Advancing March')) then
             gFunc.EquipSet(sets.March);
@@ -709,7 +708,7 @@ profile.HandleMidcast = function()
             gFunc.EquipSet(sets.Ballad);
 		elseif (string.contains(spell.Name, 'Etude')) then
             gFunc.EquipSet(sets.Etude);
-		elseif (string.contains(spell.Name, 'Operetta')) or (string.contains(spell.Name, 'Round')) or (string.contains(spell.Name, 'Fantasia')) or (string.contains(spell.Name, 'Capriccio')) or (string.contains(spell.Name, 'Gavotte')) then
+		elseif (string.match(spell.Name, 'Army\'s Paeon')) or (string.match(spell.Name, 'Army\'s Paeon II')) then
             gFunc.EquipSet(sets.Dummy);
 		else
             gFunc.EquipSet(sets.Buff);
